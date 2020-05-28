@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15702" systemVersion="19C57" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Stations" representedClassName="Stations" syncable="YES" codeGenerationType="class">
+        <attribute name="lat" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="lon" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="arrivalStation" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TripInformation" inverseName="arrivalStation" inverseEntity="TripInformation"/>
+        <relationship name="departureStation" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TripInformation" inverseName="departureStation" inverseEntity="TripInformation"/>
+    </entity>
+    <entity name="TripInformation" representedClassName="TripInformation" syncable="YES" codeGenerationType="class">
+        <attribute name="departureDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="favourite" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="lastUpdated" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="price" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="returnDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="arrivalStation" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Stations" inverseName="arrivalStation" inverseEntity="Stations"/>
+        <relationship name="departureStation" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Stations" inverseName="departureStation" inverseEntity="Stations"/>
+        <relationship name="weather" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Weather" inverseName="tripInformations" inverseEntity="Weather"/>
+    </entity>
+    <entity name="Weather" representedClassName="Weather" syncable="YES" codeGenerationType="class">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="lastUpdated" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="temp_max" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="temp_min" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="weather_type" optional="YES" attributeType="String"/>
+        <relationship name="tripInformations" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TripInformation" inverseName="weather" inverseEntity="TripInformation"/>
+    </entity>
+    <elements>
+        <element name="Stations" positionX="-452.85546875" positionY="-9842.19921875" width="128" height="118"/>
+        <element name="TripInformation" positionX="-727.234375" positionY="-9887.15234375" width="128" height="163"/>
+        <element name="Weather" positionX="-1074.2265625" positionY="-9857.2890625" width="128" height="133"/>
+    </elements>
+</model>

@@ -1,0 +1,447 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AB39290423C8C016004CC5FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB39290323C8C016004CC5FB /* AppDelegate.swift */; };
+		AB39290623C8C016004CC5FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB39290523C8C016004CC5FB /* SceneDelegate.swift */; };
+		AB39290B23C8C016004CC5FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB39290923C8C016004CC5FB /* Main.storyboard */; };
+		AB39291023C8C017004CC5FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB39290F23C8C017004CC5FB /* Assets.xcassets */; };
+		AB39291323C8C017004CC5FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB39291123C8C017004CC5FB /* LaunchScreen.storyboard */; };
+		AB500B0E23C8C2E100E90C60 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB500B0D23C8C2E100E90C60 /* CloudKit.framework */; };
+		AB500B1223C8D20600E90C60 /* DealsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB500B1123C8D20600E90C60 /* DealsViewController.swift */; };
+		AB500B1423C8D22500E90C60 /* FavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB500B1323C8D22500E90C60 /* FavouritesViewController.swift */; };
+		AB500B1D23C8D36100E90C60 /* DealsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB500B1B23C8D36100E90C60 /* DealsViewCell.swift */; };
+		AB500B1E23C8D36100E90C60 /* DealsViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB500B1C23C8D36100E90C60 /* DealsViewCell.xib */; };
+		AB500B2023C8D3B000E90C60 /* DealDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB500B1F23C8D3B000E90C60 /* DealDetailViewController.swift */; };
+		AB500B2223C8D4A500E90C60 /* OpenWeatherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB500B2123C8D4A500E90C60 /* OpenWeatherAPI.swift */; };
+		AB500B2423C8D4D200E90C60 /* TreniItaliaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB500B2323C8D4D200E90C60 /* TreniItaliaAPI.swift */; };
+		AB500B2623C8D55000E90C60 /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB500B2523C8D55000E90C60 /* ServiceLocator.swift */; };
+		AB500B2923C8D59C00E90C60 /* SearchDeals.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB500B2823C8D59C00E90C60 /* SearchDeals.swift */; };
+		AB51B08F23CF77B600095E30 /* CoudKitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB51B08E23CF77B600095E30 /* CoudKitService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AB39290023C8C016004CC5FB /* Train and Go.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Train and Go.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB39290323C8C016004CC5FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AB39290523C8C016004CC5FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AB39290A23C8C016004CC5FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AB39290F23C8C017004CC5FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AB39291223C8C017004CC5FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AB39291423C8C017004CC5FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB500B0B23C8C2DB00E90C60 /* Train and Go.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Train and Go.entitlements"; sourceTree = "<group>"; };
+		AB500B0D23C8C2E100E90C60 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		AB500B1123C8D20600E90C60 /* DealsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealsViewController.swift; sourceTree = "<group>"; };
+		AB500B1323C8D22500E90C60 /* FavouritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewController.swift; sourceTree = "<group>"; };
+		AB500B1B23C8D36100E90C60 /* DealsViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealsViewCell.swift; sourceTree = "<group>"; };
+		AB500B1C23C8D36100E90C60 /* DealsViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DealsViewCell.xib; sourceTree = "<group>"; };
+		AB500B1F23C8D3B000E90C60 /* DealDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealDetailViewController.swift; sourceTree = "<group>"; };
+		AB500B2123C8D4A500E90C60 /* OpenWeatherAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenWeatherAPI.swift; sourceTree = "<group>"; };
+		AB500B2323C8D4D200E90C60 /* TreniItaliaAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreniItaliaAPI.swift; sourceTree = "<group>"; };
+		AB500B2523C8D55000E90C60 /* ServiceLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLocator.swift; sourceTree = "<group>"; };
+		AB500B2823C8D59C00E90C60 /* SearchDeals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDeals.swift; sourceTree = "<group>"; };
+		AB51B08E23CF77B600095E30 /* CoudKitService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoudKitService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AB3928FD23C8C016004CC5FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB500B0E23C8C2E100E90C60 /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AB3928F723C8C016004CC5FB = {
+			isa = PBXGroup;
+			children = (
+				AB39290223C8C016004CC5FB /* Train and Go */,
+				AB39290123C8C016004CC5FB /* Products */,
+				AB500B0C23C8C2E100E90C60 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AB39290123C8C016004CC5FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB39290023C8C016004CC5FB /* Train and Go.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB39290223C8C016004CC5FB /* Train and Go */ = {
+			isa = PBXGroup;
+			children = (
+				AB51B08523CF017400095E30 /* Services */,
+				AB500B2723C8D57900E90C60 /* Model */,
+				AB500B1523C8D31600E90C60 /* XIB */,
+				AB500B1023C8D1B000E90C60 /* API */,
+				AB500B0F23C8D08800E90C60 /* Controller */,
+				AB500B0B23C8C2DB00E90C60 /* Train and Go.entitlements */,
+				AB39290323C8C016004CC5FB /* AppDelegate.swift */,
+				AB39290523C8C016004CC5FB /* SceneDelegate.swift */,
+				AB39290923C8C016004CC5FB /* Main.storyboard */,
+				AB39290F23C8C017004CC5FB /* Assets.xcassets */,
+				AB39291123C8C017004CC5FB /* LaunchScreen.storyboard */,
+				AB39291423C8C017004CC5FB /* Info.plist */,
+				AB500B2523C8D55000E90C60 /* ServiceLocator.swift */,
+			);
+			path = "Train and Go";
+			sourceTree = "<group>";
+		};
+		AB500B0C23C8C2E100E90C60 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB500B0D23C8C2E100E90C60 /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB500B0F23C8D08800E90C60 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AB500B1123C8D20600E90C60 /* DealsViewController.swift */,
+				AB500B1323C8D22500E90C60 /* FavouritesViewController.swift */,
+				AB500B1F23C8D3B000E90C60 /* DealDetailViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AB500B1023C8D1B000E90C60 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				AB500B2123C8D4A500E90C60 /* OpenWeatherAPI.swift */,
+				AB500B2323C8D4D200E90C60 /* TreniItaliaAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		AB500B1523C8D31600E90C60 /* XIB */ = {
+			isa = PBXGroup;
+			children = (
+				AB500B1A23C8D33C00E90C60 /* DealsCell */,
+			);
+			path = XIB;
+			sourceTree = "<group>";
+		};
+		AB500B1A23C8D33C00E90C60 /* DealsCell */ = {
+			isa = PBXGroup;
+			children = (
+				AB500B1B23C8D36100E90C60 /* DealsViewCell.swift */,
+				AB500B1C23C8D36100E90C60 /* DealsViewCell.xib */,
+			);
+			path = DealsCell;
+			sourceTree = "<group>";
+		};
+		AB500B2723C8D57900E90C60 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AB500B2823C8D59C00E90C60 /* SearchDeals.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AB51B08523CF017400095E30 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AB51B08E23CF77B600095E30 /* CoudKitService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AB3928FF23C8C016004CC5FB /* Train and Go */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB39291723C8C017004CC5FB /* Build configuration list for PBXNativeTarget "Train and Go" */;
+			buildPhases = (
+				AB3928FC23C8C016004CC5FB /* Sources */,
+				AB3928FD23C8C016004CC5FB /* Frameworks */,
+				AB3928FE23C8C016004CC5FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Train and Go";
+			productName = "Train and Go";
+			productReference = AB39290023C8C016004CC5FB /* Train and Go.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AB3928F823C8C016004CC5FB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Loris Scandurra";
+				TargetAttributes = {
+					AB3928FF23C8C016004CC5FB = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = AB3928FB23C8C016004CC5FB /* Build configuration list for PBXProject "Train and Go" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AB3928F723C8C016004CC5FB;
+			productRefGroup = AB39290123C8C016004CC5FB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AB3928FF23C8C016004CC5FB /* Train and Go */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AB3928FE23C8C016004CC5FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB39291323C8C017004CC5FB /* LaunchScreen.storyboard in Resources */,
+				AB39291023C8C017004CC5FB /* Assets.xcassets in Resources */,
+				AB500B1E23C8D36100E90C60 /* DealsViewCell.xib in Resources */,
+				AB39290B23C8C016004CC5FB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AB3928FC23C8C016004CC5FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB500B1223C8D20600E90C60 /* DealsViewController.swift in Sources */,
+				AB39290423C8C016004CC5FB /* AppDelegate.swift in Sources */,
+				AB51B08F23CF77B600095E30 /* CoudKitService.swift in Sources */,
+				AB500B1D23C8D36100E90C60 /* DealsViewCell.swift in Sources */,
+				AB500B2223C8D4A500E90C60 /* OpenWeatherAPI.swift in Sources */,
+				AB500B2423C8D4D200E90C60 /* TreniItaliaAPI.swift in Sources */,
+				AB500B2623C8D55000E90C60 /* ServiceLocator.swift in Sources */,
+				AB500B2923C8D59C00E90C60 /* SearchDeals.swift in Sources */,
+				AB500B2023C8D3B000E90C60 /* DealDetailViewController.swift in Sources */,
+				AB500B1423C8D22500E90C60 /* FavouritesViewController.swift in Sources */,
+				AB39290623C8C016004CC5FB /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AB39290923C8C016004CC5FB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB39290A23C8C016004CC5FB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AB39291123C8C017004CC5FB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB39291223C8C017004CC5FB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AB39291523C8C017004CC5FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AB39291623C8C017004CC5FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AB39291823C8C017004CC5FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Train and Go/Train and Go.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 9ZVMLP4E42;
+				INFOPLIST_FILE = "Train and Go/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.enterprise2019.Group7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = Group7;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AB39291923C8C017004CC5FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Train and Go/Train and Go.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 9ZVMLP4E42;
+				INFOPLIST_FILE = "Train and Go/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.enterprise2019.Group7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = Group7;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AB3928FB23C8C016004CC5FB /* Build configuration list for PBXProject "Train and Go" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB39291523C8C017004CC5FB /* Debug */,
+				AB39291623C8C017004CC5FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB39291723C8C017004CC5FB /* Build configuration list for PBXNativeTarget "Train and Go" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB39291823C8C017004CC5FB /* Debug */,
+				AB39291923C8C017004CC5FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AB3928F823C8C016004CC5FB /* Project object */;
+}
